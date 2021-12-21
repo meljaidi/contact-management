@@ -1,0 +1,837 @@
+{
+	"info": {
+		"_postman_id": "e53effd2-b482-4f77-a994-4fa8cffb427a",
+		"name": "contact-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "contacts",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contacts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contacts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/contacts/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"contacts",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "update",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"firstName\": \"labore esse\",\n    \"lastName\": \"aliquip eu\",\n    \"id\": -12604617,\n    \"vatNumber\": \"voluptate fugiat sunt\",\n    \"address\": \"ullamco dolor i\",\n    \"createdAt\": \"1952-01-27T05:34:15.066Z\",\n    \"modifiedAt\": \"1955-01-19T14:07:43.318Z\",\n    \"status\": \"EMPLOYEE\",\n    \"companies\": [\n        {\n            \"id\": -90149701,\n            \"vatNumber\": \"adipisicing culpa irure ut\",\n            \"address\": \"dolor adipisicing\",\n            \"createdAt\": \"1980-08-03T11:31:04.663Z\",\n            \"modifiedAt\": \"1999-04-17T22:33:29.536Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"aliqua nostrud Excepteur veniam laboris\",\n                    \"lastName\": \"tempor Duis\",\n                    \"id\": -3126917,\n                    \"vatNumber\": \"in pariatur officia\",\n                    \"address\": \"elit ipsum pariatur dolore\",\n                    \"createdAt\": \"1996-08-29T16:38:10.681Z\",\n                    \"modifiedAt\": \"1995-06-22T06:16:21.641Z\",\n                    \"status\": \"FREELANCER\"\n                },\n                {\n                    \"firstName\": \"et\",\n                    \"lastName\": \"id voluptate esse ad nisi\",\n                    \"id\": -19000204,\n                    \"vatNumber\": \"in eiusmod\",\n                    \"address\": \"Lorem magna cillum\",\n                    \"createdAt\": \"1997-02-12T15:42:30.344Z\",\n                    \"modifiedAt\": \"2017-01-18T03:56:07.873Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        },\n        {\n            \"id\": 7197161,\n            \"vatNumber\": \"et velit\",\n            \"address\": \"labore mollit minim cillum\",\n            \"createdAt\": \"1979-02-01T07:43:03.062Z\",\n            \"modifiedAt\": \"2018-01-03T15:48:57.410Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"dolore ipsum labore\",\n                    \"lastName\": \"laboris in quis consequat\",\n                    \"id\": -95735097,\n                    \"vatNumber\": \"ipsum\",\n                    \"address\": \"esse non sunt ex\",\n                    \"createdAt\": \"1962-01-04T23:25:37.720Z\",\n                    \"modifiedAt\": \"1988-01-04T21:15:13.011Z\",\n                    \"status\": \"EMPLOYEE\"\n                },\n                {\n                    \"firstName\": \"mollit fugiat\",\n                    \"lastName\": \"ipsum nulla\",\n                    \"id\": -88000894,\n                    \"vatNumber\": \"off\",\n                    \"address\": \"Ut veniam\",\n                    \"createdAt\": \"1994-08-27T17:57:11.177Z\",\n                    \"modifiedAt\": \"2012-10-26T16:32:59.259Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contacts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contacts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"firstName\": \"labore esse\",\n    \"lastName\": \"aliquip eu\",\n    \"id\": -12604617,\n    \"vatNumber\": \"voluptate fugiat sunt\",\n    \"address\": \"ullamco dolor i\",\n    \"createdAt\": \"1952-01-27T05:34:15.066Z\",\n    \"modifiedAt\": \"1955-01-19T14:07:43.318Z\",\n    \"status\": \"EMPLOYEE\",\n    \"companies\": [\n        {\n            \"id\": -90149701,\n            \"vatNumber\": \"adipisicing culpa irure ut\",\n            \"address\": \"dolor adipisicing\",\n            \"createdAt\": \"1980-08-03T11:31:04.663Z\",\n            \"modifiedAt\": \"1999-04-17T22:33:29.536Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"aliqua nostrud Excepteur veniam laboris\",\n                    \"lastName\": \"tempor Duis\",\n                    \"id\": -3126917,\n                    \"vatNumber\": \"in pariatur officia\",\n                    \"address\": \"elit ipsum pariatur dolore\",\n                    \"createdAt\": \"1996-08-29T16:38:10.681Z\",\n                    \"modifiedAt\": \"1995-06-22T06:16:21.641Z\",\n                    \"status\": \"FREELANCER\"\n                },\n                {\n                    \"firstName\": \"et\",\n                    \"lastName\": \"id voluptate esse ad nisi\",\n                    \"id\": -19000204,\n                    \"vatNumber\": \"in eiusmod\",\n                    \"address\": \"Lorem magna cillum\",\n                    \"createdAt\": \"1997-02-12T15:42:30.344Z\",\n                    \"modifiedAt\": \"2017-01-18T03:56:07.873Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        },\n        {\n            \"id\": 7197161,\n            \"vatNumber\": \"et velit\",\n            \"address\": \"labore mollit minim cillum\",\n            \"createdAt\": \"1979-02-01T07:43:03.062Z\",\n            \"modifiedAt\": \"2018-01-03T15:48:57.410Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"dolore ipsum labore\",\n                    \"lastName\": \"laboris in quis consequat\",\n                    \"id\": -95735097,\n                    \"vatNumber\": \"ipsum\",\n                    \"address\": \"esse non sunt ex\",\n                    \"createdAt\": \"1962-01-04T23:25:37.720Z\",\n                    \"modifiedAt\": \"1988-01-04T21:15:13.011Z\",\n                    \"status\": \"EMPLOYEE\"\n                },\n                {\n                    \"firstName\": \"mollit fugiat\",\n                    \"lastName\": \"ipsum nulla\",\n                    \"id\": -88000894,\n                    \"vatNumber\": \"off\",\n                    \"address\": \"Ut veniam\",\n                    \"createdAt\": \"1994-08-27T17:57:11.177Z\",\n                    \"modifiedAt\": \"2012-10-26T16:32:59.259Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        }\n    ]\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/contacts/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"contacts",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contacts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contacts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/contacts/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"contacts",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "all Contacts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/contacts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contacts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contacts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contacts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"et tempor officia ad culpa\",\n    \"lastName\": \"sint proident irure\",\n    \"id\": 29527165,\n    \"vatNumber\": \"consectetur nostrud Duis\",\n    \"address\": \"dolore ex laborum exercitation\",\n    \"createdAt\": \"2011-06-01T03:58:06.767Z\",\n    \"modifiedAt\": \"1998-02-03T04:08:20.312Z\",\n    \"status\": \"EMPLOYEE\",\n    \"companies\": [\n        {\n            \"id\": 99951368,\n            \"vatNumber\": \"Duis dolor Lorem\",\n            \"address\": \"sit et\",\n            \"createdAt\": \"2011-09-24T11:39:39.372Z\",\n            \"modifiedAt\": \"2005-09-15T22:48:24.064Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"Duis elit anim qui ad\",\n                    \"lastName\": \"dolore proident dolore irure Excepteur\",\n                    \"id\": 86191460,\n                    \"vatNumber\": \"ex dolore sit Ut\",\n                    \"address\": \"ut in laborum adipisicing\",\n                    \"createdAt\": \"1969-09-30T15:32:52.039Z\",\n                    \"modifiedAt\": \"2001-01-30T07:46:11.539Z\",\n                    \"status\": \"FREELANCER\"\n                },\n                {\n                    \"firstName\": \"est\",\n                    \"lastName\": \"ut amet ex\",\n                    \"id\": 78087900,\n                    \"vatNumber\": \"occaecat consequat aliqua aliquip\",\n                    \"address\": \"ipsum laboris\",\n                    \"createdAt\": \"1991-10-04T11:15:48.624Z\",\n                    \"modifiedAt\": \"2015-01-13T03:51:55.074Z\",\n                    \"status\": \"EMPLOYEE\"\n                }\n            ]\n        },\n        {\n            \"id\": -90808997,\n            \"vatNumber\": \"sunt sint voluptate\",\n            \"address\": \"amet sit enim irure laboris\",\n            \"createdAt\": \"2005-10-17T03:39:51.556Z\",\n            \"modifiedAt\": \"1943-10-19T21:48:46.008Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"laboris pariatur\",\n                    \"lastName\": \"Excepteur elit do\",\n                    \"id\": 71273234,\n                    \"vatNumber\": \"sunt qui enim laboris eu\",\n                    \"address\": \"in laborum veniam\",\n                    \"createdAt\": \"1993-01-23T11:30:43.015Z\",\n                    \"modifiedAt\": \"1992-04-15T04:23:48.847Z\",\n                    \"status\": \"EMPLOYEE\"\n                },\n                {\n                    \"firstName\": \"anim de\",\n                    \"lastName\": \"ad aliquip veniam\",\n                    \"id\": 9183364,\n                    \"vatNumber\": \"tempor quis aliquip\",\n                    \"address\": \"enim pariatur ut\",\n                    \"createdAt\": \"1944-08-13T06:20:14.288Z\",\n                    \"modifiedAt\": \"2009-08-10T01:13:10.068Z\",\n                    \"status\": \"EMPLOYEE\"\n                }\n            ]\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/contacts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contacts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"firstName\": \"labore esse\",\n    \"lastName\": \"aliquip eu\",\n    \"id\": -12604617,\n    \"vatNumber\": \"voluptate fugiat sunt\",\n    \"address\": \"ullamco dolor i\",\n    \"createdAt\": \"1952-01-27T05:34:15.066Z\",\n    \"modifiedAt\": \"1955-01-19T14:07:43.318Z\",\n    \"status\": \"EMPLOYEE\",\n    \"companies\": [\n        {\n            \"id\": -90149701,\n            \"vatNumber\": \"adipisicing culpa irure ut\",\n            \"address\": \"dolor adipisicing\",\n            \"createdAt\": \"1980-08-03T11:31:04.663Z\",\n            \"modifiedAt\": \"1999-04-17T22:33:29.536Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"aliqua nostrud Excepteur veniam laboris\",\n                    \"lastName\": \"tempor Duis\",\n                    \"id\": -3126917,\n                    \"vatNumber\": \"in pariatur officia\",\n                    \"address\": \"elit ipsum pariatur dolore\",\n                    \"createdAt\": \"1996-08-29T16:38:10.681Z\",\n                    \"modifiedAt\": \"1995-06-22T06:16:21.641Z\",\n                    \"status\": \"FREELANCER\"\n                },\n                {\n                    \"firstName\": \"et\",\n                    \"lastName\": \"id voluptate esse ad nisi\",\n                    \"id\": -19000204,\n                    \"vatNumber\": \"in eiusmod\",\n                    \"address\": \"Lorem magna cillum\",\n                    \"createdAt\": \"1997-02-12T15:42:30.344Z\",\n                    \"modifiedAt\": \"2017-01-18T03:56:07.873Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        },\n        {\n            \"id\": 7197161,\n            \"vatNumber\": \"et velit\",\n            \"address\": \"labore mollit minim cillum\",\n            \"createdAt\": \"1979-02-01T07:43:03.062Z\",\n            \"modifiedAt\": \"2018-01-03T15:48:57.410Z\",\n            \"contacts\": [\n                {\n                    \"firstName\": \"dolore ipsum labore\",\n                    \"lastName\": \"laboris in quis consequat\",\n                    \"id\": -95735097,\n                    \"vatNumber\": \"ipsum\",\n                    \"address\": \"esse non sunt ex\",\n                    \"createdAt\": \"1962-01-04T23:25:37.720Z\",\n                    \"modifiedAt\": \"1988-01-04T21:15:13.011Z\",\n                    \"status\": \"EMPLOYEE\"\n                },\n                {\n                    \"firstName\": \"mollit fugiat\",\n                    \"lastName\": \"ipsum nulla\",\n                    \"id\": -88000894,\n                    \"vatNumber\": \"off\",\n                    \"address\": \"Ut veniam\",\n                    \"createdAt\": \"1994-08-27T17:57:11.177Z\",\n                    \"modifiedAt\": \"2012-10-26T16:32:59.259Z\",\n                    \"status\": \"FREELANCER\"\n                }\n            ]\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contacts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contacts"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "companies",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get Enterprise",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "update 1",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -91648070,\n    \"vatNumber\": \"aute sunt\",\n    \"address\": \"laborum et dolor ut do\",\n    \"createdAt\": \"2004-03-25T15:50:01.571Z\",\n    \"modifiedAt\": \"1966-12-26T16:38:15.645Z\",\n    \"contacts\": [\n        {\n            \"firstName\": \"magna elit\",\n            \"lastName\": \"do\",\n            \"id\": -82585436,\n            \"vatNumber\": \"co\",\n            \"address\": \"Lorem aliqua velit d\",\n            \"createdAt\": \"1981-08-11T09:30:09.007Z\",\n            \"modifiedAt\": \"2001-08-20T18:21:27.951Z\",\n            \"status\": \"FREELANCER\"\n        },\n        {\n            \"firstName\": \"mollit nostrud sint\",\n            \"lastName\": \"dolore Excepteur\",\n            \"id\": 28157491,\n            \"vatNumber\": \"amet\",\n            \"address\": \"ex adipisicing magna elit laboris\",\n            \"createdAt\": \"1951-06-22T07:43:29.186Z\",\n            \"modifiedAt\": \"1979-10-25T04:29:42.956Z\",\n            \"status\": \"EMPLOYEE\"\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"id\": -91648070,\n    \"vatNumber\": \"aute sunt\",\n    \"address\": \"laborum et dolor ut do\",\n    \"createdAt\": \"2004-03-25T15:50:01.571Z\",\n    \"modifiedAt\": \"1966-12-26T16:38:15.645Z\",\n    \"contacts\": [\n        {\n            \"firstName\": \"magna elit\",\n            \"lastName\": \"do\",\n            \"id\": -82585436,\n            \"vatNumber\": \"co\",\n            \"address\": \"Lorem aliqua velit d\",\n            \"createdAt\": \"1981-08-11T09:30:09.007Z\",\n            \"modifiedAt\": \"2001-08-20T18:21:27.951Z\",\n            \"status\": \"FREELANCER\"\n        },\n        {\n            \"firstName\": \"mollit nostrud sint\",\n            \"lastName\": \"dolore Excepteur\",\n            \"id\": 28157491,\n            \"vatNumber\": \"amet\",\n            \"address\": \"ex adipisicing magna elit laboris\",\n            \"createdAt\": \"1951-06-22T07:43:29.186Z\",\n            \"modifiedAt\": \"1979-10-25T04:29:42.956Z\",\n            \"status\": \"EMPLOYEE\"\n        }\n    ]\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete 1",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/companies/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/companies/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"companies",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "96120751",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get All Enterprises",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/companies",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"companies"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "create 1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": -91648070,\n    \"vatNumber\": \"aute sunt\",\n    \"address\": \"laborum et dolor ut do\",\n    \"createdAt\": \"2004-03-25T15:50:01.571Z\",\n    \"modifiedAt\": \"1966-12-26T16:38:15.645Z\",\n    \"contacts\": [\n        {\n            \"firstName\": \"magna elit\",\n            \"lastName\": \"do\",\n            \"id\": -82585436,\n            \"vatNumber\": \"co\",\n            \"address\": \"Lorem aliqua velit d\",\n            \"createdAt\": \"1981-08-11T09:30:09.007Z\",\n            \"modifiedAt\": \"2001-08-20T18:21:27.951Z\",\n            \"status\": \"FREELANCER\"\n        },\n        {\n            \"firstName\": \"mollit nostrud sint\",\n            \"lastName\": \"dolore Excepteur\",\n            \"id\": 28157491,\n            \"vatNumber\": \"amet\",\n            \"address\": \"ex adipisicing magna elit laboris\",\n            \"createdAt\": \"1951-06-22T07:43:29.186Z\",\n            \"modifiedAt\": \"1979-10-25T04:29:42.956Z\",\n            \"status\": \"EMPLOYEE\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/companies",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"companies"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"id\": -91648070,\n    \"vatNumber\": \"aute sunt\",\n    \"address\": \"laborum et dolor ut do\",\n    \"createdAt\": \"2004-03-25T15:50:01.571Z\",\n    \"modifiedAt\": \"1966-12-26T16:38:15.645Z\",\n    \"contacts\": [\n        {\n            \"firstName\": \"magna elit\",\n            \"lastName\": \"do\",\n            \"id\": -82585436,\n            \"vatNumber\": \"co\",\n            \"address\": \"Lorem aliqua velit d\",\n            \"createdAt\": \"1981-08-11T09:30:09.007Z\",\n            \"modifiedAt\": \"2001-08-20T18:21:27.951Z\",\n            \"status\": \"FREELANCER\"\n        },\n        {\n            \"firstName\": \"mollit nostrud sint\",\n            \"lastName\": \"dolore Excepteur\",\n            \"id\": 28157491,\n            \"vatNumber\": \"amet\",\n            \"address\": \"ex adipisicing magna elit laboris\",\n            \"createdAt\": \"1951-06-22T07:43:29.186Z\",\n            \"modifiedAt\": \"1979-10-25T04:29:42.956Z\",\n            \"status\": \"EMPLOYEE\"\n        }\n    ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/companies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "add Contact To A Enterprise",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/companies/:companyID/:contactID",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"companies",
+										":companyID",
+										":contactID"
+									],
+									"variable": [
+										{
+											"key": "companyID",
+											"value": "96120751",
+											"description": "(Required) "
+										},
+										{
+											"key": "contactID",
+											"value": "96120751",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/companies/:companyID/:contactID",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"companies",
+												":companyID",
+												":contactID"
+											],
+											"variable": [
+												{
+													"key": "companyID",
+													"value": "96120751",
+													"description": "(Required) "
+												},
+												{
+													"key": "contactID",
+													"value": "96120751",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Compay By Vat Number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/search/:vatNumber",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"search",
+								":vatNumber"
+							],
+							"variable": [
+								{
+									"key": "vatNumber",
+									"value": "ut dolore",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/search/:vatNumber",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"search",
+										":vatNumber"
+									],
+									"variable": [
+										{
+											"key": "vatNumber",
+											"value": "ut dolore",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8085",
+			"type": "string"
+		}
+	]
+}
